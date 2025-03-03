@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="Chethan.tests.StandaloneTest">
+        <methods>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+          <include name="orderHistoryTest"/>
+        </methods>
+      </class> <!-- Chethan.tests.StandaloneTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Error Validation Test(failed)" verbose="0">
+    <classes>
+      <class name="Chethan.tests.ErrorValidationsTest">
+        <methods>
+          <include name="productErrorValidation"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- Chethan.tests.ErrorValidationsTest -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
