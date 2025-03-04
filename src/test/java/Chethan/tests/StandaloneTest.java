@@ -22,7 +22,7 @@ import Chethan.pageobjects.OrdersPage;
 import Chethan.pageobjects.ProductCatalog;
 
 public class StandaloneTest extends BaseTest {
-
+    //This is the new code
 	String productName = "ZARA COAT 3";
 
 	@Test(dataProvider = "getData", groups = "Purchase")
